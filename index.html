@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etienne Marques CV</title>
+    <link rel="shortcut icon" href="assets/img/alien-pngrepo-com.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="container-fluid m-0 p-0 d-flex flex-column align-items-center">
+    <header class="container-xxl m-0 p-0 pt-1 pb-1 d-flex align-content-start">
+      <picture class="rounded f m-0 ms-1 ms-md-2 p-0 ">
+      </picture>
+      <div class=" container-fluid d-flex flex-column justify-content-between">
+        <div class="d-flex flex-column justify-content-start m-0 p-0">
+          <div class="d-flex align-content-start mt-2">
+            <h1 class="align-self-end m-0 p-0">Etienne Marques</h1>
+            <p class=" align-self-auto m-0" >cv</p>
+          </div>
+          <h2 class="m-0 p-0">economista</h2>
+        </div>
+        <nav class="d-flex align-content-start">
+          <a class="me-1" target="_blank" alt="contato whatsapp 61 9 8364 7107" href="https://api.whatsapp.com/send?phone=5561983647107">
+            <img class=" img-fluid" src="assets/img/whatsapp-round-icon.svg" alt="">
+          </a>
+          <a href="#" title="et.marques@gmail.com"
+          alt="email et.marques@gmail.com"
+          id="liveToastBtn" class="me-1">
+            <img class=" img-fluid" src="assets/img/email.svg" alt="">
+          </a>
+          <a target="_blank" alt="contato github" href="https://github.com/etmarques" class="me-1">
+            <img class=" img-fluid" src="assets/img/github-icon.svg" alt="">
+          </a>
+          <a target="_blank" alt="contato linkedin" href="https://www.linkedin.com/in/etienne-marques-902462a7/" class="me-1">
+            <img class=" img-fluid" src="assets/img/linkedin.svg" alt="">
+          </a>
+          <div class="dropdown me-2 disabled">
+            <a class="dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-fluid" src="assets/img/translate2.svg" alt="">
+            </a>
+            <ul class="dropdown-menu m-3" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="en.html">English</a></li>
+              <li><a class="dropdown-item" href="es.html">Español</a></li>
+              <li><a class="dropdown-item" href="fr.html">Français</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="ms-1 toast-container" style="z-index: 11">
+        <div id="liveToast" class="toast fade" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Envie um email</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            <input type="text" name="texto" id="texto" placeholder="et.marques@gmail.com"" value="et.marques@gmail.com" readonly/>
+            <button onclick="copiarTexto()" id="copy-text-btn">Copiar</button>
+          </div>
+        </div>
+      </div>    
+    </header>
+    <main class="container-xxl m-0 p-0 flex-grow-1 d-flex align-items-center justify-content-center">
+      <div class="carouselSmallBetweenA">
+      </div>
+      <div class="carousel slide m-0 p-3" data-bs-ride="carousel" id="ads">
+        <div class=" carousel-item active" data-bs-toggle="modal" data-bs-target="#experiencias" >
+          <a href="#" class="cartao card p-0 m-1" style="width: 15rem;">
+            <picture class="m-0 p-2">
+              <img src="assets/img/cooking-pngrepo-com (1).png" class="p-0 m-0 img-fluid" alt="...">
+            </picture>
+            <h6 class="cart-tit card-title">EXPERIÊNCIAS PROFISSIONAIS</h6>
+          </a>
+        </div>
+        <div class="carousel-item"  data-bs-toggle="modal" data-bs-target="#escolaridade">
+          <a href="#" class="cartao card p-0 m-1" style="width: 15rem;">
+            <picture class="m-0 p-1">
+              <img src="assets/img/student-svgrepo-com.svg" class="p-0 m-0 img-fluid" alt="...">
+            </picture> 
+            <h6 class="cart-tit card-title">ESCOLARIDADE</h6>
+          </a>
+        </div>
+        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#outrasInfo">
+          <a href="#" class="cartao card p-0 m-1" style="width: 15rem;">
+            <picture class="m-0 p-2">
+              <img src="assets/img/tourist-svgrepo-com.svg" class="p-0 m-0 img-fluid" alt="...">
+            </picture>
+            <h6 class="cart-tit card-title">OUTRAS INFORMAÇÕES</h6>
+          </a>
+        </div>
+      </div>
+      <div class="carouselSmallBetweenB">
+      </div>
+      <button class="carousel-control-prev position-relative p-0 m-0" data-bs-target="#ads" data-bs-slide="prev">
+        <img class="carousel-control-prev-icon" src="assets/img/back-svgrepo-com.svg" alt="back">
+      </button>
+      <button class="carousel-control-next p-0 m-0 position-relative" data-bs-target="#ads" data-bs-slide="next">
+        <img class="carousel-control-next-icon" src="assets/img/next-svgrepo-com.svg" alt="next">
+      </button>    
+    </main>
+    <footer class="d-flex align-items-center container-xxl justify-content-between m-0 p-0 ps-2 pe-2">
+      <p class="m-0 p-0 ">2023. Etienne Marques</p>
+      <div class="d-flex gap-0">
+        <div style="width: 13px; background-image: url(assets/img/copy3.png); background-repeat: no-repeat; background-size: contain; background-position: center;" tabindex="0" class="m-1 p-0 ps-1 pe-1 " role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Fonte dos ícones e imagens" data-bs-content="Cloudword: por wordclouds.com. Ícones: whatsapp: de icon_king1, em freeicons.io; email: em nicepng.com; github: de jtblabs, em svgrepo.com; linkedin: de geakstr, em svgrepo.com; tradução: de zuo_Haddyn, em veryicon.com; experiências, escolaridade, outras informações, alien, certificação: cc0 license, em svgrepo.com; luzes do aeroporto, de pedrik, Narita runway, em flickr.com; ferramentas, de limeArt, Tools, em flickr.com; automação, de chirag bhayani, em flickr.com; são silvestre, de adriano ricci, em flickr.com; infografico, de Curtiss Spontelli, infographic Version 3.0, em flickr.com; hands, de shibby5882, em flickr.com; aikonos, de laurent morand, infographie, em flickr.com.">
+        </div>
+        <a href="assets/files/cv_EtienneMarques_v080622.pdf" download="cv_EtienneMarques_v080622" class="pdf fw-bold border-danger bg-danger m-1 ms-0 p-0 ps-1 pe-1 rounded btn btn-secondary"type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Download da versão simplificada em pdf do CV">PDF
+        </a>
+      </div>
+    </footer>   
+    <!-- Modal Experiências Profissionais-->
+    <div class="modal fade" id="experiencias" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-end">
+              <img style="width: 30px; height: 30px;" class="img-fluid" src="assets/img/cooking-pngrepo-com (1).png" alt="">
+              <h6 class="ps-2 p-0 m-0">EXPERIÊNCIAS PROFISSIONAIS</h6>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <!-- Accordion-->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header mt-0 pt-0 mb-0 pb-0" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <div class="p-0 m-0 pe-3 me-3"
+                      style="height: 35px; width:70px; background-image: url(assets/img/agu-removebg-preview.png);background-repeat: no-repeat; background-size: contain; background-position: center;">
+                    </div>
+                    <p class="p-0 m-0" style="font-size: 11px; color: grey; ">(2021 até o presente)</p>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Economista na área gestão e fiscalização de outsourcing da <a class="aCliqueAqui" target="_blank" href="https://www.gov.br/agu/pt-br" title="site da AGU" data-bs-toggle="tooltip" data-bs-placement="bottom" >AGU</a>.<br>
+                    Também tenho participado em projetos de implementação de boas práticas no setor, no mapeamento e revisão de atividades e no desenvolvimento de ferramentas de controle e acompanhamento de processos, colocando em prática os conhecimentos que tenho obtido em TI.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div class="p-0 m-0 pe-3 me-3"
+                      style="height: 30px; width:140px; background-image: url(assets/img/640px-Logo_Infraero.png);background-repeat: no-repeat; background-size: contain; background-position: center;">
+                    </div>
+                    <p class="p-0 m-0" style="font-size: 11px; color: grey; ">(2010 a 2020)</p>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Economista na área de orçamentação, elaboração de projetos básicos e termos de referência, análise econômico-financeira, gestão e fiscalização de outsourcing da <a class="aCliqueAqui" target="_blank" href="https://www4.infraero.gov.br/" title="site da INFRAERO" data-bs-toggle="tooltip" data-bs-placement="bottom" >INFRAERO</a>. <br>
+                    Nos últimos sete anos, assumi cargos de coordenação e de gerência de contratos e convênios, participando em processos de remodelação de estrutura organizacional e mapeamento de atividades, readequação de equipes, otimização de carteira de contratos, revisão e definição de normas, manuais e procedimentos, bem como na incorporação das atividades da gerência num centro de serviços compartilhados (CSC).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed mt-0 pt-0 mb-0 pb-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <div class="p-0 m-0 pe-3 me-3"
+                      style="height: 60px; width:120px; background-image: url(assets/img/Banrisul_logotipo_2022.svg);background-repeat: no-repeat; background-size: contain; background-position: center;">
+                    </div>
+                    <p class="p-0 m-0" style="font-size: 11px; color: grey; ">(2007 a 2010)
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Atuei nas áreas de negócios (gestão de carteiras de pessoas físicas e de empresas) do <a class="aCliqueAqui" target="_blank" href="https://www.banrisul.com.br/" title="site do Banrisul" data-bs-toggle="tooltip" data-bs-placement="bottom">Banrisul</a>. Essa experiência me ajudou a desenvolver competências tais como o foco no atingimento de metas, vendas e negociação.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <img src="assets/img/demaisExp.png" class="p-0 m-0 img-fluid outrosEmpregos">
+                    </img>
+                    <p class="p-0 m-0" style="font-size: 11px; color: grey">(2001 a 2007)</p>
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Tive experiências profissionais na <a class="aCliqueAqui" target="_blank" href="https://dee.rs.gov.br/inicial" title="site da FEE" data-bs-toggle="tooltip" data-bs-placement="bottom">FEE</a> (atual Departamento de Economia e Estatística) e em atividades de consultoria econômica, realizando estimativas de PIB, índices de preços e modelos econométricos de demanda, além de elaborar relatórios técnicos. Essas experiências me ajudaram a desenvolver competências associadas à análise econômica, produção textual e tratamento de dados.
+                    <br><br>
+                    Além disso, fui estagiário na gerência de regulatório, inteligência de mercado e compras de energia da <a class="aCliqueAqui" target="_blank" href="https://www.aesbrasil.com.br/pt-br" title="site do grupo AES Brasil" data-bs-toggle="tooltip" data-bs-placement="bottom">AES Sul</a>, no setor de controladoria da planta da <a class="aCliqueAqui" target="_blank" href="https://www.chevrolet.com.br/" title="site da Chevrolet" data-bs-toggle="tooltip" data-bs-placement="bottom">General Motors</a>, em Gravataí/RS, e na coordenação financeira do Programa RS Rural, programa de fomento a pequenos agricultores mantido pela <a class="aCliqueAqui" target="_blank" href="https://www.agricultura.rs.gov.br/inicial" title="site da SAA/RS" data-bs-toggle="tooltip" data-bs-placement="bottom">Secretaria da Agricultura do Rio Grande do Sul</a> e pelo <a class="aCliqueAqui" target="_blank" href="https://www.worldbank.org/pt/country/brazil" title="site do Banco Mundial" data-bs-toggle="tooltip" data-bs-placement="bottom">Banco Mundial</a>, vigente até o início dos anos 2000.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Escolaridade-->
+    <div class="modal fade" id="escolaridade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-end">
+              <img style="width: 30px; height: 30px;" class="img-fluid" src="assets/img/student-svgrepo-com.svg" alt="">
+              <h6 class="ps-2 p-0 m-0">ESCOLARIDADE</h6>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <div class="container-fluid">
+              <div class="row gap-5 p-5 pt-0">
+                <div class="card bg-body" style="width: 18rem;">
+                  <a href="http://www.ufrgs.br/ufrgs/inicial" target="_blank"><img class="card-img-top"
+                      src="assets/img/ufrgs3.png" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <p class="card-text">Formado em Economia em 2007. Trabalho de conclusão com o tema: <a href="assets/files/EtienneMarques - ptd_relatorioIII_TC_072007.pdf" download="EtienneMarques_monoUfrgs2007" class="aCliqueAqui" title="download do TCC" data-bs-toggle="tooltip" data-bs-placement="bottom">Estimativa de consumo residencial de energia elétrica de oito microrregiões do Rio Grande do Sul (...)</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="card bg-body" style="width: 18rem;">
+                  <a href="https://www.candidomendes.edu.br/" target="_blank">
+                    <img class="card-img-top" src="assets/img/logo-ucam-email-NOVO.png" alt="Card image cap">
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">Pós-graduação em Gerenciamento de Projetos. Conclusão em 2018 com o artigo: <a href="assets/files/ARTIGO_UCAM_POSPROJETOS_ETIENNE.pdf" download="EtienneMarques_posUcam2018" class="aCliqueAqui" title="download do artigo" data-bs-toggle="tooltip" data-bs-placement="bottom">Uso de técnicas de gerenciamento de projetos aplicadas no planejamento de processos licitatórios (...)</a></p>
+                  </div>
+                </div>
+                <div class="card bg-body" style="width: 18rem;">
+                  <a href="https://www.senac.br/">
+                    <img class="card-img-top" src="assets/img/senac2.png" alt="Card image cap">
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">Graduação em Análise e Desenvolvimento de Sistemas. Previsão de formatura em outubro de 2023. Uma versão beta deste site fez parte do projeto da disciplina WEB Standards, cursado no segundo semestre de 2022.</p>
+                  </div>
+                </div>
+                <div class="card bg-body" style="width: 18rem;">
+                  <a href="https://www.itaerea.com/" target="_blank">
+                    <img class="card-img-top p-2" src="assets/img/ITAérea_HD_original.png" alt="Card image cap">
+                  </a>
+                  <div class="card-body">
+                    <p class="card-text">Diplomado em Gestão Aeroportuária. Currículo aborda as principais atividades do setor (operações aeroportuárias, exploração comercial e tarifação). Curso concluído em 2015.</p>
+                  </div>
+                </div>
+                <div class="card bg-body" style="width: 18rem;">
+                  <img class="card-img-top p-2" src="assets/img/outrasFormacoes.png" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">Mais de 900 horas em cursos de capacitação e formações nas áreas de gestão, licitações e contratos, finanças, BI, auditoria e TI.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Outras Informações-->
+    <div class="modal fade" id="outrasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-end">
+              <img style="width: 30px; height: 30px;" class="img-fluid" src="assets/img/tourist-svgrepo-com.svg" alt="">
+              <h6 class="ps-2 p-0 m-0">OUTRAS INFORMAÇÕES</h6>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    BACKGROUND
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      Em economia, adquiri conhecimentos técnicos em análise e tratamento de dados, inferência estatística e testagem, análise e estimativa de modelos econométricos de séries temporais (univariadas e multivariadas), análise de indicadores macroeconômicos, manipulação de números-índices e correção de preços, matemática financeira e análise de projetos de investimento, custos e finanças.
+                    </p>
+                    <p>
+                      Em logística e gestão de outsourcing, adquiri conhecimentos técnicos em orçamentação e formação de preço, negociação com fornecedores, compras, gestão patrimonial, elaboração de projetos-básicos e termos de referência, composição de remuneração de postos de trabalho, criação de indicadores de mensuração de resultados por tipo de serviço, análise de propostas, alteração contratual, revisão, reajuste, reequilíbrio econômico-financeiro e repactuação de preços, gestão de garantias e securitização, fiscalização de contratos, tratativas com sindicatos, aplicação de sanções e rescisão, confecção de relatórios e subsídios a processos judiciais e de auditoria, gestão e formalização de credenciamento e convênios e na criação de normas e manuais.
+                    </p>
+                    <p>
+                      Em gestão de pessoas e projetos, tive sólidas experiências em liderar equipes (presenciais e remotas), com atuação baseada no atingimento de resultados sem deixar de atender aos princípios éticos e sociais para manutenção de um ambiente saudável e produtivo. Atuei em gestão de projetos com equipes multidisciplinares. Formei sucessores, multiplicadores e atuei como coaching em situações pontuais e necessárias. Atuei em gestão de crises, na realocação de profissionais e de equipes e em processos demissionais. Tenho experiência em estimar tempos & métodos para formação de postos de trabalho e unidades de serviços e na criação de metas e indicadores de acompanhamento de resultados.   
+                    </p>
+                    <P>
+                      Em TI, tenho tido experiências com algumas metodologias, linguagens, frameworks e ferramentas: POO, MVC, mobile-first, HTML, CSS, Bootstrap, Javascript, React, Java, PHP, Python, Node, R, J-Multi, Docker, Git, SQL,MySQL, MongoDB, DAS, PowerBI. 
+                    </P>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    IDIOMAS
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <P>Inglês: leitura, escrita e compreensão oral</P>
+                    <p>Espanhol: leitura e compreensão oral</p>
+                    <p>Francês: leitura</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    REALIZAÇÕES E PROJETOS EM ANDAMENTO
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="container-fluid">
+                      <div id="listaTrabalhos" class="row gap-5 p-0 pt-0">
+                    
+                        <div id="w1" onmouseover="escreveTTp(1)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Palestra realizada no I Fórum da Rede Nacional de Compras Públicas, promovida pelo Ministério da Economia. Foi apresentado o processo de centralização dos contratos de outsourcing na Infraero, que gerou uma economia anual de mais de R$ 15 milhões desde sua implantação." >
+                          <div class="ratio ratio-16x9 demo dataTTip">
+                            <iframe src="https://www.youtube.com/embed/l64tMdy05Y8" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen></iframe>
+                          </div>
+                          <div class="ribbon-wrapper dataTTip">
+                            <div class="ribbon green dataTTip">REALIZADO!</div>
+                          </div>
+                          <div class="card-body overflow-auto demo dataTTip">
+                            <p class="card-text">Centralização de contratos de outsourcing.</p>
+                          </div>
+                        </div>
+                    
+                        <div id="w2" onmouseover="escreveTTp(2)" onmouseout="apagaTTp()" class="card bg-body  dataTTip" style="width: 18rem;" data-value="Screenshot do main dashboard dos indicadores de resultado das equipes da gerência de contratos e convênios da Infraero.">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/laccIndex.JPG"></img>
+                            <a class="downloadButton" href="assets/files/laccIndex.pdf" target="_blank"></a>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon green">REALIZADO!</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Indicadores de acompanhamento de equipes.</p>
+                          </div>
+                        </div>
+                        <div id="w3" onmouseover="escreveTTp(3)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Download do documento de apresentação do projeto de criação de um banco de preços dos serviços de manutenção aeroportuária, que estimou uma economia anual de R$ 9,4 milhões.">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/pro_tools_19772699171_6db55b0dee_w.jpg"></img>
+                            <a class="downloadButton" href="assets/files/CSATMEM201800133A.pdf" target="_blank"></a>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon green">REALIZADO!</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Banco de preços dos serviços de manutenção.</p>
+                          </div>
+                        </div>
+                    
+                        <div id="w4" onmouseover="escreveTTp(4)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Download do documento de apresentação da revisão da forma de contratação e gestão dos contratos de utilities, que gerou uma economia anual de R$ 2 milhões.">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/pro_runway_49087350178_08763ea56e_w.jpg"></img>
+                            <a class="downloadButton" href="assets/files/MM CIRC 12218 DGSC 2017 Implantação novo modelo de contratação.pdf" target="_blank"></a>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon green">REALIZADO!</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Otimização da carteira de contratos de utilities.</p>
+                          </div>
+                        </div>
+                    
+                        <div id="w5" onmouseover="escreveTTp(5)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Acesse alguns exemplos de contratação de outsourcing realizadas na Infraero.">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/pro_hands_9507108743_4f0586b2c7_w.jpg"></img>
+                            <a class="downloadButton" href="assets/files/amostraContratos.pdf" target="_blank"></a>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon green">REALIZADO!</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Exemplos de contratações e processos licitatórios.</p>
+                          </div>
+                        </div>
+                    
+                        <div id="w6" onmouseover="escreveTTp(6)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Apresentação da proposta de projeto de implantação de RPA para a conclusão do Schneider Global Experience 2022.">
+                          <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/grX48gmO8ZA" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen></iframe>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon green">REALIZADO!</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Schneider Global Student Experience 2022</p>
+                          </div>
+                        </div>
+                      
+                        <div id="w7" onmouseover="escreveTTp(7)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Aplicação baseada em PHP para elaboração e compilação de relatórios de fiscalização que possuem IMR (indicadores de mensuração de resultado). Pretende-se automatizar o cálculo das faturas com o uso dos relatórios. Previsão de conclusão do primeiro componente da aplicação: fevereiro de 2023.">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/pro_automation_44718866590_7e62e9b3e1_w.jpg"></img>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon yellow">EM ANDAMENTO</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Automação dos relatórios de fiscalização de outsourcing</p>
+                          </div>
+                        </div>
+                        
+                        <div id="w8" onmouseover="escreveTTp(8)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Utilização do Power BI para monitoramento dos processos de logística. Previsão de conclusão da primeira versão do dashboard: março de 2023.">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/pro_dashboard_4152312064_a7eee218d7_w.jpg"></img>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon yellow">EM ANDAMENTO</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">BI para logística</p>
+                          </div>
+                        </div>
+                        
+                        <div id="w9" onmouseover="escreveTTp(9)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Aplicação com AI para monitoramento e modelagem dos principais agregados macroeconômicos. Previsão de conclusão do primeiro componente: outubro de 2023.">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/pro_aikonos_26065285560_664a002bf7_w.jpg"></img>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon yellow">EM ANDAMENTO</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">AIconomics Board and Views</p>
+                          </div>
+                        </div>
+                        
+                        <div id="w10" onmouseover="escreveTTp(10)" onmouseout="apagaTTp()" class="card bg-body dataTTip" style="width: 18rem;" data-value="Previsão de conclusão do projeto: dezembro de 2023">
+                          <div class="ratio ratio-16x9">
+                            <img src="assets/img/pro_saoSilvestre_37050104871_05dedacf8c_w.jpg"></img>
+                          </div>
+                          <div class="ribbon-wrapper">
+                            <div class="ribbon yellow">EM ANDAMENTO</div>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">Correr a São Silvestre</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    NETWORKING
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      <span class="d-inline-block aCliqueAqui" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" title="jose.pessoa@economia.gov.br">José Antônio Pessoa Neto</span>, auditor, diretor de Gestão de Serviços e Unidades Compartilhadas do Ministério do Planejamento, foi Superintendente de Serviços Compartilhados na Infraero. <br><br>
+                      <span class="d-inline-block aCliqueAqui" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" title="romulo.torres@infraero.gov.br">Rômulo Torres</span>, administrador, foi Superintendente de Logística na Infraero. <br><br>
+                      <span class="d-inline-block aCliqueAqui" tabindex="0" data-bs-toggle="tooltip" data-bs-trigger="hover focus" title="delnei@gmail.com">Delnei Friedrich</span>, engenheiro, consultor, sócio da DNF Consultoria e Sistemas. 
+                    </p><p class="text-muted">*demais referências podem ser encontradas no Linkedin ou solicitadas por email.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    ALÉM DISSO, EU...
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>...sou 
+                      <span class="d-inline-block aCliqueAqui" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-html="true"
+                        data-bs-content="<img src='assets/img/etNinaJqm.jpeg' class='img-thumbnail' alt='Hollywood Sign on The Hill'/>">pai da Nina e do Joaquim
+                      </span>: os melhores filhos e os melhores amigos que eu poderia ter neste planeta. Sou membro da organização das <a class="aCliqueAqui" target="_blank" href="https://www.jw.org/Pt" title="site das Testemunhas de Jeová" data-bs-toggle="tooltip" data-bs-placement="bottom">Testemunhas de Jeová</a> e me esforço para tentar seguir os preceitos cristãos escritos na Bíblia. Amo música, artes plásticas, filosofia, literatura, história, gastronomia e conversar com quem também se empolga com esses temas. Gosto de jogar tennis e de me iludir com o <a class="aCliqueAqui" target="_blank" href="https://gremio.net/" title="site do Grêmio Foot-ball Portoalegrense" data-bs-toggle="tooltip" data-bs-placement="bottom">Grêmio</a>, sempre em busca do [próximo] mundial :)
+                    </p>
+                    <p>Algumas frases e citações que tenho sempre comigo são:</p>
+                    <figure class="text-end">
+                      <blockquote class="blockquote">
+                        <p>Plvralitas non est ponenda sine necessitate.</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        William of Ockham's <cite title="Source Title">razor</cite>
+                      </figcaption>
+                    </figure>
+                    <figure class="text-end">
+                      <blockquote class="blockquote">
+                        <p>Honi soit qui mal y pense.</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Eduard III <cite title="Source Title"></cite>
+                      </figcaption>
+                    </figure>
+                    <figure class="text-end">
+                      <blockquote class="blockquote">
+                        <p>Ensina-nos a contar os nossos dias para que possamos adquirir um coração sábio.</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Salmo 90:12<cite title="Source Title"></cite>
+                      </figcaption>
+                    </figure>
+                    <figure class="text-end">
+                      <blockquote class="blockquote">
+                        <p>Lembra-te de mim com favor, ó meu Deus [Jeová].</p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Neemias 13:31<cite title="Source Title"></cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer p-0 m-0 d-flex justify-content-start align-items-start">
+            <p id="txtFooter" class="ps-1 pe-1" ></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+    <script defer>
+
+      /*
+      const dataTools = document.querySelectorAll(".dataTTip");
+      const textoTools = document.getElementById('txtFooter');
+
+      dataTools.forEach(data =>
+        data.addEventListener(
+          'mouseover', (e) => {
+            textoTools.textContent = e.target.getAttribute('data-value');
+          }
+        ))
+      dataTools.forEach(data =>
+        data.addEventListener(
+          'mouseout', (e) => {
+            textoTools.textContent = null;
+          }
+        ))
+      */    
+
+      const textoTools = document.getElementById('txtFooter');
+
+      function escreveTTp(num) {
+        id = ('w'+num)
+        getTTip = document.getElementById(id).getAttribute('data-value');
+        textoTools.textContent = getTTip;
+      }
+
+      function apagaTTp() {
+        textoTools.textContent = null;
+      }
+
+    </script>
+    <script>
+      var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+          toastTrigger.addEventListener('click', () => {
+            var toast = new bootstrap.Toast(toastLiveExample);
+            var copiar = document.getElementById("copy-text-btn");
+            copiar.innerHTML = "Copiar"
+
+            toast.show()
+          })
+        }
+
+        function copiarTexto() {
+          // Get the text field
+          var copyText = document.getElementById("texto");
+
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+
+
+          // Alert the copied text
+          var copiado = document.getElementById("copy-text-btn");
+          copiado.innerHTML = "Copiado!"
+        }
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+          trigger: 'focus'
+        })
+
+    </script>
+  </html>
